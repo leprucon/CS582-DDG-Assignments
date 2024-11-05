@@ -12,30 +12,15 @@ void Exercise1::solve_sparse_linear_system()
     // TODO: ADD YOUR CODE HERE
 
     // Adapted from https://eigen.tuxfamily.org/dox/classEigen_1_1SparseLU.html
-
-    // I recognize I could do this in a much cleaner way with a loop. But I won't.
-    tripletList.push_back(T(0, 0, 0));
     tripletList.push_back(T(0, 1, 1));
-    tripletList.push_back(T(0, 2, 0));
     tripletList.push_back(T(0, 3, -2));
-    tripletList.push_back(T(0, 4, 0));
     tripletList.push_back(T(1, 0, -1));
-    tripletList.push_back(T(1, 1, 0));
     tripletList.push_back(T(1, 2, 3));
-    tripletList.push_back(T(1, 3, 0));
     tripletList.push_back(T(1, 4, 4));
-    tripletList.push_back(T(2, 0, 0));
-    tripletList.push_back(T(2, 1, 0));
-    tripletList.push_back(T(2, 2, 0));
     tripletList.push_back(T(2, 3, 5));
     tripletList.push_back(T(2, 4, 2));
     tripletList.push_back(T(3, 0, -1));
     tripletList.push_back(T(3, 1, 3));
-    tripletList.push_back(T(3, 2, 0));
-    tripletList.push_back(T(3, 3, 0));
-    tripletList.push_back(T(3, 4, 0));
-    tripletList.push_back(T(4, 0, 0));
-    tripletList.push_back(T(4, 1, 0));
     tripletList.push_back(T(4, 2, 1));
     tripletList.push_back(T(4, 3, 1));
     tripletList.push_back(T(4, 4, 1));
