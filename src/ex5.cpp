@@ -22,8 +22,6 @@ void Exercise5::compare_dense_solvers()
         Eigen::MatrixXd Mt = M.transpose();
         M = M * Mt; // make positive semi-definite
         auto t1 = high_resolution_clock::now();
-        // do work here
-        // I just commented and uncommented as needed to generate datapoints
 
         // Eigen::PartialPivLU<Eigen::MatrixXd> lu = Eigen::PartialPivLU<Eigen::MatrixXd>(M);
         // Eigen::MatrixXd Md = lu.matrixLU();
